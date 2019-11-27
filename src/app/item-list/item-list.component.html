@@ -1,0 +1,18 @@
+
+<div class="row rowCard"  >
+    <div class="col-lg-2 col-md-4">
+        <img class="imgCrad" src={{this.item.previewImage}}>
+    </div>
+    <div class="col-lg-9 col-md-8 colDescription">
+        <h5 class="card-title ">{{this.item.name}}</h5>
+        <p class="card-text  pStyle  ">{{this.item.domain}} . {{this.formatedDate}}</p>
+        <div>
+            <i *ngFor="let tag of tags" >
+                <a href="#" class="btn btn-dark">{{tag}}</a>
+            </i>
+
+                </div>
+    </div>
+
+</div>
+

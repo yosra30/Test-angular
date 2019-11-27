@@ -1,0 +1,35 @@
+app-header{
+    width:100%;
+    margin-block-start: 1%;
+     
+}
+app-container{
+    width:100%;
+}
+@media (max-width: 640px){
+ 
+    .rowContent{
+        text-align: -webkit-center;
+        
+    }
+    
+       .row{
+        margin-right:0!important;
+    }
+ 
+    }
+    @media (max-width: 768px){
+ 
+       
+        .row{
+            margin-right:0!important;
+        }
+        }   
+
+        @media (max-width: 1024px){
+            .row{
+                margin-right:0!important;
+            }
+           
+             
+            }

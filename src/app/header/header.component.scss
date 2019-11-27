@@ -1,0 +1,99 @@
+.input-group{
+    width: 70%!important;
+     margin-inline-start: 4%;
+     /* margin-block-start: 1%; */
+    }
+
+#button-addon2{
+    background-color:"#ed9d59"!important ;
+   
+}    
+#button-addon2 :focus{
+    background-color:"#ed9d59"!important ;
+    
+    
+}   
+.btn-lisView{
+    border-top-left-radius: 23px;
+    border-bottom-left-radius: 23px;
+    width: 10%;
+    font-weight: bold;
+    padding: 5% ;
+    color:#014a5dff;
+}
+
+.btn-cardView{
+    border-top-right-radius: 23px;
+    
+    border-bottom-right-radius: 23px;
+    padding: 5%;
+    width: 10%;
+    font-weight: bold; 
+    color:#014a5dff;
+}
+.headerRow{
+    margin: inherit;
+}
+   
+.btnGrp-header{
+    width: 25%;
+}
+.btns-grp{
+    display: flex;
+    justify-content: flex-end;
+    right: 2%;
+}
+.btn-search{
+    color:white;
+    font-weight: bold;
+}
+ .btn-active{
+    color:#ffff
+ }
+ @media (max-width: 640px){
+ 
+    .btns-grp{
+        display: none;
+        
+    }
+    .headerRow{
+        margin: 0;
+    }
+    .row{
+        margin-right:0!important;
+    }
+    }
+    @media (max-width: 768px) and (min-width: 640px){
+ 
+         
+        .btnGrp-header{
+            width: 51%;
+        }
+        .headerRow{
+            margin: 0;
+        }
+        .btns-grp{
+            right: 3%;
+            
+        }
+        .row{
+            margin-right:0!important;
+        }
+        }   
+        @media (max-width: 768px) and (min-width: 768px){
+            .btnGrp-header{
+                width: 51%;
+            }
+        }
+         @media (max-width: 1024px) and (min-width: 769px) {
+            .row{
+                margin-right:0!important;
+            }
+           
+            .btnGrp-header {
+                width: 38%;
+            }
+            .headerRow{
+                margin: 0;
+            }
+            }

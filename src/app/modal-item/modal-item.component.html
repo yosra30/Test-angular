@@ -1,0 +1,47 @@
+
+<div class="backdrop" (click)="onClose()"></div>
+
+<!-- modal -->
+<div class="modal bd-example-modal-lg modalBack " tabindex="-1" role="dialog" style="display: block; ">
+    <div class="modal-dialog  modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content borderModal ">
+            <div class="cardHeader ">
+
+                <h4 class="modal-title">{{data.name}}} </h4>
+                
+
+                <div class="col btns-grp">
+                    <div class="btn-group btnGrp-header " role="group" aria-label="Basic example">
+                        <button type="button" (click)="getarticle('previous')" class="btn btn-secondary btn-cardView btnPrec">
+                            <fa-icon [icon]="faChevronLeft"></fa-icon>
+                        </button>
+                        <button type="button" (click)="getarticle('next')"  class="btn btn-secondary btn-cardView btnSuiv">
+                            <fa-icon [icon]="faChevronRight"></fa-icon>
+                        </button>
+
+                        <button type="button"  class="btn btn-secondary btn-lisView btnClose" aria-label="Close" (click)="onClose()">
+                            <fa-icon [icon]="faTimes"></fa-icon>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row rowSubTitle">
+                <p class="subTitle">{{ data.domain}} . {{this.formatedDate}}</p>
+
+
+            </div>
+            
+            <div class="divImg">
+                <img class="imgCard" src={{this.data.previewImage}}>
+            </div>
+            <div class="modal-body" [innerHTML]="data.text" infinite-scroll [infiniteScrollContainer]="selector" [fromRoot]="true" [infiniteScrollDistance]="modalScrollDistance"
+                [infiniteScrollThrottle]="modalScrollThrottle" [scrollWindow]="false">
+
+
+
+
+            </div>
+        </div>
+    </div>
+</div>

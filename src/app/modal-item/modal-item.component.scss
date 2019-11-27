@@ -1,0 +1,101 @@
+.modal-title{
+    color:#014a5dff;
+    font-weight: bold;
+    margin-right: 6%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.subTitle{
+color: grey
+}
+.imgCard{
+    height: 162px;
+    width: 346px;
+}
+.divImg{
+    margin: auto;
+    line-height: 16;
+}
+.cardHeader{
+    margin: 6px;
+    display: flex;
+    flex-direction: row;}
+.backdrop {
+    position: fixed;
+    top:0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+.modal-dialogue {
+    max-width: 1225px;
+}
+.icon{
+    color:red
+}
+.btnPrec{
+    font-weight: 900;
+     font-size: xx-large;
+     color:#ff903cff ;
+    border-top-left-radius: 32px;
+    border-bottom-left-radius: 32px;
+    line-height: 1!important;
+
+
+}
+.btnSuiv{
+    font-weight: 900;
+     font-size: xx-large;
+     color:#ff903cff ;
+}
+.btnClose{
+    font-weight: 900;
+     font-size: xx-large;
+     color:#ff903cff ;
+     border-bottom-right-radius: 32px;
+    border-top-right-radius: 32px;
+}
+.rowSubTitle{
+    margin-left: 0.5%;
+    line-height: 0;
+}
+.btnGrp-header{
+    height: min-content
+}
+.btn {
+    line-height: 1!important;
+    padding: 0px 6px 0px 4px;
+}
+ .modalBack{
+   background-color:  #71e3ff3b!important   
+ }
+ .modal-dialog-centered{
+     max-width: 1180px;
+ }
+ .btns-grp{
+    display: flex;
+    justify-content: flex-end;
+ }
+ .borderModal{
+    border-radius: 10px;
+    border-color: black;
+    border-width: 1.5px;
+ }
+ @media (max-width: 640px){
+ 
+   
+   .row{
+    margin-right:0!important;
+}
+ .imgCard  {
+    height: 150px;
+    width: 241px;
+ }
+ 
+    }
+     

@@ -1,0 +1,26 @@
+<div class="row rowStyle">
+    <div class="col-12 ">
+        <h4 class="subTitle"> Article {{this.newsIndex}} to {{this.nbNews}}</h4>
+    </div>
+</div>
+<div *ngIf="displayType== 'ListView'" class="containerBody">
+    <div *ngFor="let item of news | paginate: { id: 'server', itemsPerPage: ITEMS_PER_PAGE, currentPage: p, totalItems: nbNews }">
+        <app-item-list (click)="onShowDynamicModal(item)" [item]="item"></app-item-list>
+
+    </div>
+</div>
+<div *ngIf="displayType== 'cardView'" class="row rowCards">
+    <div class="col-lg-4 col-md-6  mt-4" *ngFor="let item of news | paginate: { id: 'server', itemsPerPage: ITEMS_PER_PAGE, currentPage: p, totalItems: nbNews }">
+ 
+        <app-item-card [item]="item" (click)="onShowDynamicModal(item)"></app-item-card>
+    </div>
+</div>
+
+<div class="has-text-centered paginationContainer">
+    <div class="spinner" [ngClass]="{ 'hidden': !loading }"></div>
+    <pagination-controls class="my-pagination"                       responsive="true"
+    (pageChange)="getPage($event)" id="server" previousLabel="" nextLabel=""></pagination-controls>
+</div>
+
+<ng-template appPlaceholder></ng-template>
+

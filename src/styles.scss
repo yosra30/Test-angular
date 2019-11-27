@@ -1,0 +1,11 @@
+/* You can add global styles to this file, and also import other style files */
+$theme-colors: (
+  "primary": #ff903cff,
+  "secondary": #ffecddff,
+  "dark":#014a5dff
+);
+body{
+  overflow-x: hidden;
+
+}
+@import "node_modules/bootstrap/scss/bootstrap";

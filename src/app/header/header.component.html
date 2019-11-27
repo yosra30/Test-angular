@@ -1,0 +1,19 @@
+    <div class="row headerContainer">
+      <div class="col headerRow">
+            <div class="input-group ">
+                    <input type="text" class="form-control" [(ngModel)]="searchText"
+                     aria-label="search text" aria-describedby="button-addon2">
+                    <div class="input-group-append">
+                      <button (click)="onSearch()" class="btn btn-primary btn-search" type="button" id="button-addon2">SEARCH</button>
+                    </div>
+                  </div>
+      </div>
+      <div class="col btns-grp">
+            <div class="btn-group btnGrp-header " role="group" aria-label="Basic example">
+                    <button type="button" [className]="displayType=='ListView'?'btn btn-primary btn-lisView btn-active ':'btn btn-secondary btn-lisView'" class="btn btn-primary btn-lisView " 
+                     (click)="onChangeDispaly('ListView')">
+                        List view</button>
+                    <button type="button"  [className]="displayType=='cardView'?'btn btn-primary btn-cardView btn-active ':'btn btn-secondary btn-cardView'" class="btn btn-secondary btn-cardView" 
+                    (click)="onChangeDispaly('cardView')">Card view</button>
+                  </div>
+      </div>

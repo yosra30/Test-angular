@@ -1,0 +1,119 @@
+.subTitle{
+    
+    color:#014a5dff;
+    font-weight: bold;
+}
+
+.rowStyle{
+    margin: 2.5%;
+}
+.rowStyle>div{
+    margin-inline-start: 0.6%;
+}
+.containerBody{
+    margin-block-start: -0.5em;
+}
+.rowCards{
+    margin-left: 3%;
+    display: flex;
+    padding: 0;
+    flex-direction: row;
+}
+.my-pagination ::ng-deep .ngx-pagination{
+    text-align: center;
+    font-size: x-large;
+    font-weight: 500
+}
+.my-pagination ::ng-deep .ngx-pagination li{
+    background-color: #ffecdd;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.my-pagination ::ng-deep .ngx-pagination   .current{
+    background-color: #ff903cff;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.my-pagination ::ng-deep  .ngx-pagination .pagination-next a::after,
+.my-pagination ::ng-deep  .ngx-pagination .pagination-next.disabled::after{
+    content: ">";
+    color:#ff903cff;
+    font-weight: 900;
+
+}
+.my-pagination ::ng-deep.ngx-pagination .pagination-previous{
+    padding-left: 0;
+    border-bottom-left-radius: 23px;
+    border-top-left-radius: 23px;
+    padding-right: 0;
+
+}
+.my-pagination ::ng-deep .ngx-pagination .pagination-previous.disabled{
+    padding-left: 10px;
+
+    padding-right: 10px;
+
+}
+.my-pagination ::ng-deep .ngx-pagination .pagination-next.disabled{
+    padding-left: 10px;
+
+    padding-right: 10px;
+
+}
+.my-pagination ::ng-deep  .ngx-pagination .pagination-next{
+    padding-left: 0;
+    border-bottom-right-radius: 23px;
+    border-top-right-radius: 23px;
+    padding-right: 0;
+
+}
+
+.my-pagination ::ng-deep.ngx-pagination .pagination-previous a::before,
+.my-pagination ::ng-deep .ngx-pagination .pagination-previous.disabled::before{
+    content: "<";
+    color:#ff903cff;
+    font-weight: 900;
+
+}
+
+
+    @media (max-width: 640px){
+ 
+        .rowCards{
+            margin-left:-15px
+            
+        }
+        .paginationContainer{
+            margin-top: 13px;
+
+        } 
+         .my-pagination ::ng-deep .ngx-pagination li.small-screen { 
+             padding-top: 3px;
+        padding-bottom: 3px;
+        }
+        .row{
+            margin-right:0!important;
+        }
+    } 
+
+    @media (max-width: 768px){
+ 
+         
+        .paginationContainer{
+            margin-top: 17px;
+    
+        } 
+        .row{
+            margin-right:0!important;
+        }
+        }   
+        @media (max-width: 1024px){
+            .row{
+                margin-right:0!important;
+            }
+            .paginationContainer{
+                margin-top: 13px;
+        
+            } 
+            }
